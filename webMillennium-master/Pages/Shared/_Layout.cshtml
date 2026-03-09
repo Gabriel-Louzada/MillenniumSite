@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content="Millennium" />
+    <title>@ViewData["Title"] - Millennium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/millenniuum.css" asp-append-version="true" />
+</head>
+<body>
+    <div id="particles-js" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+        <header id="main-header">
+            <div class="header-inner">
+                <div class="header-brand">
+                    <a href="#home" class="logo-wrap logo-wrap-top">
+                        <img src="~/logo-millennium.png" alt="Millennium" class="logo-img" />
+                        @* <img src="https://i.postimg.cc/vgN9wF07/Chat-GPT-Image-17-de-fev-de-2026-20-25-45-(1).png" alt="Millennium" class="logo-img" /> *@
+                        <span class="logo logo-pulse">MILLENNIUM </span>
+                    </a>
+                </div>
+                <div class="header-nav-row">
+                    <nav aria-label="Navegação principal">
+                        <a href="#home">Início</a>
+                        <a href="#solucoes">Soluções</a>
+                        <a href="#beneficios">Benefícios</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#contato">Contato</a>
+                    </nav>
+                    <div class="header-actions">
+                        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Alternar tema escuro/claro" title="Alternar tema"><i id="theme-icon" class="fa fa-moon-o" aria-hidden="true"></i></button>
+                        <a href="#login" class="btn btn-primary">ÁREA DO CLIENTE</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            @RenderBody()
+        </main>
+
+        <div id="landing-bottom-bar" class="landing-bottom-bar" aria-hidden="true">
+            <div class="landing-bottom-bar-inner">
+                <a href="#home" class="bar-title-link">
+                    @* <img src="https://i.postimg.cc/vgN9wF07/Chat-GPT-Image-17-de-fev-de-2026-20-25-45-(1).png" alt="" class="bar-logo-img" aria-hidden="true" /> *@
+                    <img src="~/logo-millennium.png" alt="Millennium" class="logo-img" style="width:40px; height: 40px "/>
+                    <span class="bar-title">Millennium</span>
+                </a>
+                <nav class="bar-links" aria-label="Atalhos">
+                    <a href="#home">Início</a>
+                    <a href="#solucoes">Soluções</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <a href="#contato" class="bar-cta">Solicitar contato</a>
+            </div>
+        </div>
+
+        <footer id="contato-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#home" class="logo-wrap logo-wrap-footer">
+                        <img src="~/logo-millennium.png" alt="Millennium" class="logo-img" />
+                        @* <img src="https://i.postimg.cc/vgN9wF07/Chat-GPT-Image-17-de-fev-de-2026-20-25-45-(1).png" alt="Millennium" class="logo-img" /> *@
+                        <span class="logo">MILLENNIUM</span>
+                    </a>
+                    <p>Especialistas em gerenciamento de redes, segurança técnica e sistemas web sob medida. Cuidamos da sua TI para que você foque apenas em crescer.</p>
+                    @* <p>Plataforma web para gestão de atendimentos e relacionamento com clientes. Gestão de atendimentos que simplifica o seu dia a dia.</p> *@
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/millennium.ti?igsh=bTZ5eW9weXVmZnJr" class="social-link" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#solucoes">Soluções</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="tel:+5528999358301">(28) 99935-8301</a></li>
+                        <li><a href="tel:+5528999166075">(28) 99916-6075</a></li>
+                        <li><a href="contato@millenniumti.com.br">contato@millenniumti.com.br</a></li>
+                        <li>Cachoeiro de Itapemirim - ES</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Millennium T.I</p>
+                @* <p>© Millennium. Gestão de atendimentos que simplifica o seu dia a dia.</p> *@
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="~/js/millenniuum.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,340 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Millennium CRM – Gestão de Atendimentos";
+}
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="hero-title-line">SUA EMPRESA SEGURA,</span>
+            <span class="hero-title-line gradient-text">ESTÁVEL E PREPARADA </span>
+            <span class="hero-title-line gradient-text">PARA CRESCER</span>
+        </h1>
+        <p class="hero-subtitle">
+            @* Plataforma web para gestão de atendimentos e relacionamento com clientes. Controle centralizado por empresa, com acompanhamento em tempo real. *@
+            Especialistas em redes, segurança e criação de ecossistemas web de alto impacto para empresas visionárias
+        </p>
+        <div class="hero-buttons">
+            <a href="#contato" class="btn btn-primary">Solicitar contato</a>
+            <a href="#solucoes" class="btn btn-outline">Conhecer soluções</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="floating-card">
+            <div class="dashboard-mock">
+                <div class="dashboard-mock-header">
+                    <span class="dashboard-mock-title"><i class="fa fa-server"></i> Status do Sistema</span>
+                    <span class="dashboard-mock-badge"><i class="fa fa-circle dashboard-live-dot"></i> Tempo real</span>
+                </div>
+                <div class="dashboard-mock-kpis">
+                    <div class="dashboard-kpi">
+                        <span class="dashboard-kpi-value">99.9%</span>
+                        <span class="dashboard-kpi-label">Uptime</span>
+                    </div>
+                    <div class="dashboard-kpi">
+                        <span class="dashboard-kpi-value">2.4k</span>
+                        <span class="dashboard-kpi-label">Ameaças</span>
+                    </div>
+                    <div class="dashboard-kpi">
+                        <span class="dashboard-kpi-value">24/7</span>
+                        <span class="dashboard-kpi-label">Monitorado</span>
+                    </div>
+                    <div class="dashboard-kpi">
+                        <span class="dashboard-kpi-value">58</span>
+                        <span class="dashboard-kpi-label">Sites</span>
+                    </div>
+                </div>
+                <div class="dashboard-mock-chart">
+                    <div class="dashboard-chart-bar" style="--h: 45%"></div>
+                    <div class="dashboard-chart-bar" style="--h: 70%"></div>
+                    <div class="dashboard-chart-bar" style="--h: 55%"></div>
+                    <div class="dashboard-chart-bar" style="--h: 90%"></div>
+                    <div class="dashboard-chart-bar" style="--h: 65%"></div>
+                    <div class="dashboard-chart-bar" style="--h: 80%"></div>
+                </div>
+                <div class="dashboard-mock-activity">
+                    <div class="dashboard-activity-item"><i class="fa fa-check-circle"></i> Backup diário concluído</div>
+                    <div class="dashboard-activity-item"><i class="fa fa-clock-o"></i> Firewall atualizado</div>
+                    <div class="dashboard-activity-item"><i class="fa fa-plus-circle"></i> Certificado SSL renovado</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@* 
+<!-- Stats -->
+<section class="stats">
+    <div class="stat-item reveal-on-scroll">
+        <div class="stat-number">+500</div>
+        <div class="stat-label">Empresas ativas</div>
+    </div>
+    <div class="stat-item reveal-on-scroll">
+        <div class="stat-number">+10k</div>
+        <div class="stat-label">Atendimentos/mês</div>
+    </div>
+    <div class="stat-item reveal-on-scroll">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Satisfação</div>
+    </div>
+</section> *@
+
+<!-- O que é o Millennium CRM -->
+<section class="about-crm" id="oquee">
+    <h2 class="section-title reveal-on-scroll">O QUE É O MILLENNIUM</h2>
+    <p class="about-crm-lead reveal-on-scroll">Simplificamos a complexidade tecnológica para que você foque no que realmente importa. Com soluções completas em infraestrutura, backup em nuvem e desenvolvimento, a Millennium TI é o motor da sua transformação digital.</p>
+    <div class="about-crm-grid">
+        <div class="tech-item reveal-on-scroll">
+            <h4><i class="fa fa-bullseye"></i> Missão</h4>
+            <p>Oferecer uma solução simples e eficiente para gestão de atendimentos e relacionamento com clientes.</p>
+        </div>
+        <div class="tech-item reveal-on-scroll">
+            <h4><i class="fa fa-users"></i> Para quem</h4>
+            <p>Empresas, gestores e equipes de atendimento que buscam organização e visibilidade em um único lugar.</p>
+        </div>
+        <div class="tech-item reveal-on-scroll">
+            <h4><i class="fa fa-shield"></i> Segurança</h4>
+            <p>Sessões controladas e dados protegidos. Múltiplas empresas em uma única solução.</p>
+        </div>
+        <div class="tech-item reveal-on-scroll">
+            <h4><i class="fa fa-globe"></i> Feito para o Brasil</h4>
+            <p>Idioma e fluxos pensados para o contexto brasileiro. Interface intuitiva.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Soluções -->
+<section class="features" id="solucoes">
+    <h2 class="section-title reveal-on-scroll">SOLUÇÕES – O QUE OFERECEMOS</h2>
+    <div class="features-grid">
+        <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon"><i class="fa fa-shield"></i></div>
+            <h3 class="feature-title">
+                Firewall 
+            </h3>
+            @* <p class="feature-desc">Proteção avançada para sua rede empresarial</p> *@
+            <p class="feature-desc">Bloqueio de ataques, controle de acessos e proteção contra invasões para manter seus dados e sistemas seguros.</p>
+            @* <p class="feature-desc">Status personalizados: aberto, em andamento, concluído, recusado. Tudo em um só lugar.</p> *@
+            @* <span class="feature-tag">personalizável</span> *@
+        </div>
+        <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon"><i class="fa fa-sitemap"></i></div>
+            <h3 class="feature-title">
+                Gestão de redes corporativas
+            </h3>
+            <p class="feature-desc">Gerenciamento completo de roteadores, links e tráfego para garantir estabilidade e máxima eficiência da conexão.</p>
+            @* <p class="feature-desc">Métricas e gráficos para acompanhar desempenho e demandas em tempo real.</p> *@
+            @* <span class="feature-tag">tempo real</span> *@
+        </div>
+        <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon"><i class="fa fa-server"></i></div>
+            <h3 class="feature-title">Gestão de Infraestrutura TI</h3>
+            <p class="feature-desc">Gerenciamento de servidores, computadores, switches e serviços críticos para manter a operação sempre funcionando.</p>
+            @* <p class="feature-desc">Cadastro de empresas, clientes e tipos de serviço. Múltiplas empresas em uma única solução.</p> *@
+            @* <span class="feature-tag">escalável</span> *@
+        </div>
+        <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon"><i class="fa fa-globe"></i></div>
+            <h3 class="feature-title">Desenvolvimentos de lead page</h3>
+            <p class="feature-desc">Desenvolvimento de páginas modernas e otimizadas para atrair clientes e fortalecer sua marca na internet.</p>
+            @* <span class="feature-tag">eficiente</span> *@
+        </div>
+        <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon"><i class="fa fa-code"></i></div>
+            <h3 class="feature-title">Desenvolvimento de sitemas</h3>
+            <p class="feature-desc">Criamos sistemas sob medida para automatizar processos, organizar informações e aumentar a produtividade.</p>
+            @* <span class="feature-tag">controle</span> *@
+        </div>
+        <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon"><i class="fa fa-cloud-upload"></i></div>
+            <h3 class="feature-title">Backup em nuvem</h3>
+            <p class="feature-desc">Backup seguro e monitorado para garantir recuperação rápida de arquivos em caso de falhas ou ataques.</p>
+            @* <span class="feature-tag">seguro</span> *@
+        </div>
+    </div>
+</section>
+
+<!-- Benefícios em destaque (estilo planos) -->
+<section class="plans" id="beneficios">
+    <h2 class="section-title reveal-on-scroll">POR QUE ESCOLHER O MILLENNIUM</h2>
+    <div class="plans-grid">
+        <div class="plan-card reveal-on-scroll">
+            <h3 class="plan-name">Infraestrutura</h3>
+            <div class="plan-price">100%</div>
+            <div class="plan-period">disponível</div>
+            <ul class="plan-features">
+                <li>Fim das quedas de internet</li>
+                <li>Sistemas que não travam</li>
+                <li>TI operando no modo invisível</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Saiba mais</a>
+        </div>
+        <div class="plan-card popular reveal-on-scroll">
+            <div class="popular-tag">PARCERIA</div>
+            <h3 class="plan-name">Implementação</h3>
+            <div class="plan-price">✔️</div>
+            <div class="plan-period">Executado</div>
+            <ul class="plan-features">
+                <li>Configuração de redes e servidores </li>
+                <li>Desenvolvimento do sistema ou site</li>
+                <li>Zero impacto na sua equipe</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary">Solicitar contato</a>
+        </div>
+        <div class="plan-card reveal-on-scroll">
+            <h3 class="plan-name">Gestão Ativa</h3>
+            <div class="plan-price">24/7</div>
+            <div class="plan-period">Monitoramento</div>
+            <ul class="plan-features">
+                <li>Resolução proativa de problemas</li>
+                <li>Atualizações de segurança</li>
+                <li>Suporte sempre disponível</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Saiba mais</a>
+        </div>
+    </div>
+</section>
+
+@* <!-- Controle e Tecnologia -->
+<section class="tech-section" id="sobre">
+    <div class="tech-content tech-content--center reveal-on-scroll">
+        <h2 class="section-title">CONTROLE E TECNOLOGIA</h2>
+        <p class="tech-lead">Construído para garantir performance, segurança e escalabilidade. Tudo em um só lugar: status dos atendimentos, métricas e equipe.</p>
+        <div class="tech-grid tech-grid--center">
+            <div class="tech-item">
+                <h4><i class="fa fa-bolt"></i> Tempo real</h4>
+                <p>Acompanhamento e atualizações instantâneas</p>
+            </div>
+            <div class="tech-item">
+                <h4><i class="fa fa-cloud"></i> Web</h4>
+                <p>Acesse de qualquer dispositivo, sem instalação</p>
+            </div>
+            <div class="tech-item">
+                <h4><i class="fa fa-mobile"></i> Multiplataforma</h4>
+                <p>Desktop, tablet e celular</p>
+            </div>
+            <div class="tech-item">
+                <h4><i class="fa fa-google"></i> Google</h4>
+                <p>Login com e-mail/senha ou conta Google</p>
+            </div>
+        </div>
+    </div>
+</section> *@
+
+
+<!-- Controle e Tecnologia -->
+<section class="tech-section" id="sobre">
+    <div class="tech-content tech-content--center reveal-on-scroll">
+        <h2 class="section-title">TECNOLOGIA QUE IMPULSIONA</h2>
+        <p class="tech-lead">Do cabeamento estruturado ao sistema web complexo. Entregamos a base tecnológica necessária para sua empresa crescer sem travar.</p>
+        <div class="tech-grid tech-grid--center">
+            <div class="tech-item">
+                <h4><i class="fa fa-bolt"></i> Monitoramento 24/7</h4>
+                <p>Vigilância constante da sua rede e servidores.</p>
+            </div>
+            <div class="tech-item">
+                <h4><i class="fa fa-cloud"></i> Stack Moderna</h4>
+                <p>Sistemas web rápidos, seguros e escaláveis.</p>
+            </div>
+            <div class="tech-item">
+                <h4><i class="fa fa-mobile"></i> Foco em Segurança</h4>
+                <p>Blindagem de dados e conformidade técnica.</p>
+            </div>
+            <div class="tech-item">
+                <h4><i class="fa fa-google"></i> Cloud Integrada</h4>
+                <p>Soluções em nuvem para total mobilidade.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <h2 class="cta-title reveal-on-scroll">PRONTO PARA SIMPLIFICAR?</h2>
+    @* <p class="cta-text reveal-on-scroll">Transforme a gestão de atendimentos da sua empresa. Solicite informações ou demonstração.</p> *@
+    <div class="cta-buttons">
+        <a href="#contato" class="btn btn-primary">Solicitar demonstração</a>
+        <a href="#contato" class="btn btn-outline">Falar com consultor</a>
+    </div>
+</section>
+
+<!-- Planos (Básico, PRO, Avançado) -->
+@* <section class="plans" id="planos">
+    <h2 class="section-title reveal-on-scroll">PLANOS</h2>
+    <p class="section-lead reveal-on-scroll">Escolha o plano ideal para o tamanho da sua operação. Todos incluem suporte e atualizações.</p>
+    <div class="plans-grid">
+        <div class="plan-card reveal-on-scroll">
+            <h3 class="plan-name">Básico</h3>
+            <div class="plan-price">R$ 99</div>
+            <div class="plan-period">por mês</div>
+            <ul class="plan-features">
+                <li>1 empresa</li>
+                <li>Até 3 usuários</li>
+                <li>500 atendimentos/mês</li>
+                <li>Dashboard em tempo real</li>
+                <li>Suporte por e-mail</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Assinar agora</a>
+        </div>
+        <div class="plan-card popular reveal-on-scroll">
+            <div class="popular-tag">MAIS ESCOLHIDO</div>
+            <h3 class="plan-name">PRO</h3>
+            <div class="plan-price">R$ 199</div>
+            <div class="plan-period">por mês</div>
+            <ul class="plan-features">
+                <li>Até 3 empresas</li>
+                <li>Até 10 usuários</li>
+                <li>2.000 atendimentos/mês</li>
+                <li>Relatórios e métricas</li>
+                <li>Suporte prioritário</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary">Assinar agora</a>
+        </div>
+        <div class="plan-card reveal-on-scroll">
+            <h3 class="plan-name">Avançado</h3>
+            <div class="plan-price">R$ 349</div>
+            <div class="plan-period">por mês</div>
+            <ul class="plan-features">
+                <li>Empresas ilimitadas</li>
+                <li>Até 30 usuários</li>
+                <li>10.000 atendimentos/mês</li>
+                <li>Todos os recursos PRO</li>
+                <li>Suporte dedicado</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Assinar agora</a>
+        </div>
+    </div>
+</section> *@
+
+<!-- Contato -->
+<section class="contato-section" id="contato">
+    <div class="contato-inner">
+        <div class="contato-info reveal-on-scroll">
+            <h2 class="section-title">Fale conosco</h2>
+            <p class="section-lead">
+                Solicite informações, demonstração ou planos. Estamos prontos para ajudar.
+            </p>
+            <div class="contato-canais">
+                <p><strong>Celular:</strong> (28) 99935-8301 - (28) 99916-6075</p>
+                <p><strong>WhatsApp:</strong> (28) 99935-8301 - (28) 99916-6075</p>
+                <p><strong>E-mail comercial:</strong> contato@millenniumti.com.br</p>
+            </div>
+        </div>
+        <div class="reveal-on-scroll">
+            <form id="form-contato" class="contato-form" method="post" aria-label="Formulário de contato">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" required placeholder="Seu nome" />
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" required placeholder="seu@email.com" />
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" />
+                <label for="empresa">Empresa</label>
+                <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa" />
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
