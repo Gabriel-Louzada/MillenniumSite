@@ -173,8 +173,8 @@ header.header-faded {
 }
 
 .logo-wrap-top .logo-img {
-    width: 70px;
-    height: 70px;
+    width: 45px;
+    height: 45px;
 }
 
 .logo-img:hover {
@@ -304,8 +304,8 @@ nav a:hover::before {
 
 /* Toggle tema escuro/claro */
 .theme-toggle {
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 2px solid var(--accent);
     background: var(--bg-card);
@@ -328,7 +328,7 @@ nav a:hover::before {
     box-shadow: 0 0 0 2px var(--accent);
 }
 .theme-toggle .fa {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
 }
 
 /* Hero Section */
@@ -337,7 +337,8 @@ nav a:hover::before {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 100px 0;
+    padding: 30px 0;
+    gap: 40px;
 }
 
 .hero-content {
@@ -391,7 +392,7 @@ nav a:hover::before {
     padding: 20px;
     box-shadow: 0 0 50px var(--shadow-accent);
     animation: float 6s ease-in-out infinite;
-    min-width: 360px;
+    min-width: min(360px, 100%);
     max-width: 520px;
     width: 100%;
 }
@@ -639,7 +640,7 @@ nav a:hover::before {
 
 /* Features Section */
 .features {
-    padding: 100px 0;
+   padding: 30px 0;
 }
 
 .section-title {
@@ -865,7 +866,7 @@ nav a:hover::before {
 
 /* O que é o Millennium CRM (acima de Soluções) */
 .about-crm {
-    padding: 100px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -1043,7 +1044,7 @@ nav a:hover::before {
 
 /* Contato - formulário */
 .contato-section {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 .contato-inner {
@@ -1122,7 +1123,7 @@ nav a:hover::before {
 footer {
     padding: 80px 0 30px;
     border-top: 1px solid var(--border);
-    margin-top: 100px;
+/*    margin-top: 100px;*/
 }
 
 .footer-grid {
@@ -1297,6 +1298,11 @@ footer {
     font-size: 14px;
 }
 
+.landing-bottom-bar .bar-cta .fa {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
 /* Animações */
 @keyframes glow {
     0%, 100% { box-shadow: 0 0 20px var(--shadow-accent-strong); }
@@ -1353,6 +1359,7 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
+        gap: 60px;
     }
 
     .hero-title {
